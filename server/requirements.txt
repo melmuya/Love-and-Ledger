@@ -1,0 +1,15 @@
+Django==5.2.1
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+python-dotenv==1.0.1
+psycopg2-binary==2.9.9  # For PostgreSQL support
+Pillow==10.2.0  # For image processing
+django-filter==23.5  # For filtering querysets
+django-storages==1.14.2  # For handling static/media files
+gunicorn==21.2.0  # For production deployment
+whitenoise==6.6.0  # For serving static files
+pytest==8.0.0  # For testing
+pytest-django==4.8.0  # Django test integration
+black==24.1.1  # For code formatting
+flake8==7.0.0  # For linting
+isort==5.13.2  # For import sorting 
