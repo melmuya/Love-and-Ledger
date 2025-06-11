@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from decimal import Decimal
 
-from server.core.models import UserProfile
+from core.models import UserProfile
 
 class Budget(models.Model):
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
