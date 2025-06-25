@@ -2,10 +2,10 @@ from django.db import models
 from django.utils import timezone
 from decimal import Decimal
 
-from core.models import UserProfile
+from django.conf import settings
 
 class Budget(models.Model):
-    user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

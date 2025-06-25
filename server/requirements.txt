@@ -13,3 +13,4 @@ pytest-django==4.8.0  # Django test integration
 black==24.1.1  # For code formatting
 flake8==7.0.0  # For linting
 isort==5.13.2  # For import sorting 
+djangorestframework-simplejwt==5.5.0 
